@@ -1,0 +1,21 @@
+chat-service/
+├── app/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── models/
+│   │   ├── user.py
+│   │   └── chat.py
+│   ├── core/
+│   │   └── security.py
+│   ├── routes/
+│   │   ├── chat.py
+│   │   └── files.py
+│   ├── sockets/
+│   │   └── manager.py
+│   └── utils/
+│       ├── database.py
+│       ├── censor.py
+│       └── file_storage.py
+├── uploads/                   # Папка для загруженных файлов
+├── .env
+└── requirements.txt

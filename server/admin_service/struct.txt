@@ -1,0 +1,15 @@
+admin-service/
+├── app/
+│   ├── __init__.py
+│   ├── main.py                     # FastAPI + startup
+│   ├── models/
+│   │   └── user.py                 # User (общая модель)
+│   ├── core/
+│   │   └── security.py             # JWT, проверка админа
+│   ├── routes/
+│   │   └── admin.py                # Все API для управления
+│   └── utils/
+│       ├── database.py             # get_db, hash
+│       └── csv_import.py           # Импорт underground_users из CSV
+├── .env
+└── requirements.txt

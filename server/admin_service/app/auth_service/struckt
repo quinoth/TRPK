@@ -1,0 +1,22 @@
+auth-service/
+├── app/
+│   ├── main.py
+│   ├── routes/
+│   │   ├── auth.py          # login, logout, reset-password
+│   │   └── users.py         # register, confirm, manage permissions
+│   ├── models/
+│   │   ├── user.py
+│   │   ├── confirmation_code.py
+│   │   └── reset_token.py
+│   ├── core/
+│   │   ├── security.py      # JWT, hashing
+│   │   └── abac.py          # Проверка доступа к сервисам
+│   ├── utils/
+│   │   ├── email.py         # Отправка кодов и ссылок через Kafka
+│   │   └── database.py      # Подключение к PostgreSQL
+│   ├── init_db.py           # Создание админа при старте
+|   └──events/                  # Kafka producers
+│       ├── __init__.py
+│       └── producer.py
+│              
+└

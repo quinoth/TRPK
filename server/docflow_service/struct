@@ -1,0 +1,17 @@
+docflow-service/
+├── app/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── models/
+│   │   └── document.py
+│   ├── core/
+│   │   └── security.py
+│   ├── routes/
+│   │   └── documents.py
+│   ├── services/
+│   │   └── event_producer.py
+│   └── utils/
+│       ├── search.py
+│       └── versioning.py
+├── .env
+└── requirements.txt

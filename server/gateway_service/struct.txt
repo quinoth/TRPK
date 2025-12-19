@@ -1,0 +1,15 @@
+gateway-service/
+├── app/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── config/
+│   │   └── services.py          # URL микросервисов
+│   ├── core/
+│   │   └── security.py          # JWT, проверка прав
+│   ├── utils/
+│   │   └── orchestrator.py      # Оркестрация
+│   └── routes/
+│       ├── gateway.py           # API Gateway
+│       └── bff.py               # BFF для фронтенда
+├── .env
+└── requirements.txt
